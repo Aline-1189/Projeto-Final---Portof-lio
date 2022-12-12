@@ -1,0 +1,575 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #0d0d0e;
+    --bg-cards: #c3c0e2;
+    --bg-techs: #CB92B1;
+  }
+ 
+  body { /*FALTA CONFIGURAR AS VARIAVEIS CORRETAS*/
+    margin: 1% 2%;
+  }
+
+ .main{
+    background-color: var(--text-color);
+    display: grid;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 3fr;
+    grid-template-rows: 20% 1fr 20% 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    grid-template-areas: 
+    "profile myprojects myprojects"
+    "profile postGH-1 postGH-2"
+    "contacts recentPost recentPost"
+    "contacts post post"
+    "tec . ."
+    "exp . ."
+    "edu . .";
+  }
+
+  .profile {
+    position: absolute;
+    width: 350px;
+    height: 320px;
+    left: 40px;
+    top: 40px;  
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .profile img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 100px;
+    top: 50px;
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+   }
+
+   .profile h1 {
+    position: absolute;
+    width: 220px;
+    height: 1;
+    left: 110px;
+    top: 180px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 29px;
+    color: #837E9F;
+  }
+
+  .profile h2 {
+    position: absolute;
+    width: 200px;
+    height: 17px;
+    left: 110px;
+    top: 255px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    color: #837E9F;
+  }
+
+  .myProjets {
+    position: absolute;
+    width: 865px;
+    height: 120px; /*altura da div*/
+    left: 410px; 
+    top: 40px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .myProjets h1 {
+    position: absolute;
+    width: 200px; /*largura da caixa que contem o texto*/
+    left: 40px; /*distancia esquerda da borda da div*/
+    top: 45px; /*distancia do topo*/
+    font-family: 'Merriweather Sans'; /*fonte do texte*/
+    font-style: normal; /*estilo da letra*/
+    font-weight: 700; /*espessura da letra*/
+    font-size: 30px;
+    line-height: 25px;
+    color: #837E9F;
+    margin: 0% 0%;
+  }
+  
+  .projetoN1 { /*FALTA IMAGEM DO JAVA*/
+    position: absolute;
+    width: 420px;
+    height: 186px;
+    left: 410px;
+    top: 180px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+  #tituloCxN1 {
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    left: 70px;
+    top: 10px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #imgPastaCxN1 {
+    position: absolute;
+    width: 25px;
+    left: 30px;
+    top: 25px;
+    bottom: 50px;
+  }
+
+  #conteudoCXN1 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 30px;
+    top: 60px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #estrelaCXN1 {
+    position: absolute;
+    width: 23px;
+    left: 30px;
+    top: 130px;
+    bottom: 50px;
+  }
+
+  #qntEstrela {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 60px;
+    top: 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #imag02CxN1 {
+    position: absolute;
+    width: 25px;
+    left: 130px;
+    top: 130px;
+  }
+
+  #quantidade02 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 160px;
+    top: 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #program {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 330px;
+    top: 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  .projetoN2 { /*FALTA IMAGEM DO JAVA*/
+    position: absolute;
+    width: 420px;
+    height: 186px;
+    left: 855px;
+    top: 180px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+  #tituloCxN2 {
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    left: 70px;
+    top: 10px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #imgPastaCxN2 {
+    position: absolute;
+    width: 25px;
+    left: 30px;
+    top: 25px;
+    bottom: 50px;
+  }
+
+  #conteudoCXN2 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 30px;
+    top: 60px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #estrelaCXN2 {
+    position: absolute;
+    width: 23px;
+    left: 30px;
+    top: 130px;
+    bottom: 50px;
+  }
+
+  #qntEstrelaN2 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 60px;
+    top: 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #imag02CxN2 {
+    position: absolute;
+    width: 25px;
+    left: 130px;
+    top: 130px;
+  }
+
+  #quantidade03 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 160px;
+    top: 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #programN2 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 332px;
+    top: 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  .recentPost {
+    position: absolute;
+    width: 865px;
+    height: 120px; /*altura da div*/
+    left: 410px; 
+    top: 390px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+  .recentPost h1 {
+    position: absolute;
+    width: 200px; /*largura da caixa que contem o texto*/
+    left: 40px; /*distancia esquerda da borda da div*/
+    top: 45px; /*distancia do topo*/
+    font-family: 'Merriweather Sans'; /*fonte do texte*/
+    font-style: normal; /*estilo da letra*/
+    font-weight: 700; /*espessura da letra*/
+    font-size: 30px;
+    line-height: 25px;
+    color: #837E9F;
+    margin: 0% 0%;
+  }
+
+  .contatos {
+  position: absolute;
+  width: 348px;
+  height: 348px;
+  left: 40px;
+  top: 380px;
+  background: #302F3D;
+  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  }
+
+  .contatos h1 {
+    position: absolute;
+    width: 600px;
+    height: 16px;
+    left: 75px;
+    top: 40px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #837E9F;
+  }
+
+  #pinLocaliza {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 35px;
+    top: 48px;
+  }
+
+  #linkedin {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 35px;
+    top: 130px;
+  }
+
+  #email {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 35px;
+    top: 170px;
+  }
+
+  #trabalho {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 35px;
+    top: 88px;
+  }
+
+.tecnologias {
+    position: absolute;
+    width: 348px;
+    height: 350px;
+    left: 40px;
+    top: 740px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.tecnologias h1 {
+  position: absolute;
+  width: 200px; /*largura da caixa que contem o texto*/
+  left: 35px; /*distancia esquerda da borda da div*/
+  top: 40px; /*distancia do topo*/
+  font-family: 'Merriweather Sans'; /*fonte do texte*/
+  font-style: normal; /*estilo da letra*/
+  font-weight: 900; /*espessura da letra*/
+  font-size: 30px;
+  line-height: 25px;
+  color: #837E9F;
+}
+#git{
+  position: absolute;
+  width: 110px;
+  height: 35px;
+  left: 50px;
+  top: 130px;
+  background: #CB92B1;
+  border-radius: 30px;
+  }
+#h2Git{
+    position: absolute;
+    width: 100px;
+    height: 11px;
+    left: 40px;
+    font-family: 'Merriweather Sans';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 10px;
+    color: #000000;
+  } 
+
+  #gitHub {
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    left: 190px;
+    top: 130px;
+    background: #CB92B1;
+    border-radius: 30px;
+  }
+  #h2GitHub {
+    position: absolute;
+    width: 80px;
+    height: 11px;
+    left: 1px;
+    font-family: 'Merriweather Sans';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 5px;
+    color: #000000;
+  }
+  #html {  
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    left: 190px;
+    top: 230px;
+    background: #CB92B1;
+    border-radius: 30px;
+  }
+  #h2Html { 
+    width: 86px;
+    height: 0px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  #css {
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    left: 50px;
+    top: 230px;
+    background: #CB92B1;
+    border-radius: 30px;
+    }
+  #h2CSS {
+      position: absolute;
+      width: 100px;
+      height: 11px;
+      left: 30px;
+      top: 0%;
+      font-family: 'Merriweather Sans';
+      font-style: bold;
+      font-weight: 900;
+      font-size: 13px;
+      line-height: 5px;
+      color: #000000;
+    } 
+  
+   
+
+.educacao {
+    position: absolute;
+    width: 348px;
+    height: 350px;
+    left: 40px;
+    top: 740px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+  .experiencias {
+    position: absolute;
+    width: 348px;
+    height: 350px;
+    left: 40px;
+    top: 1115px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  .experiencias h1 {
+    position: absolute;
+    width: 200px;
+    height: 26px;
+    left: 60px;
+    top: 10px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    color: #837E9F;
+    margin: 30%
+  }
+  #lifeWork {
+    position: absolute;
+    width: 175px;
+    height: 243px;
+    left: 100px;
+top: 1000px;
+
+font-family: 'Merriweather Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+
+color: #837E9F;
+  }
+
+  .educação {
+    position: absolute;
+    width: 348px;
+    height: 350px;
+    left: 40px;
+    top: 1495px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
